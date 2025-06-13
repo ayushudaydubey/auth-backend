@@ -3,7 +3,11 @@ const router = express.Router();
 const authController = require('../controllers/authController.js');
 const authenticateToken = require("../middelware/authMiddelware.js");
 
-// Auth routes
+// Auth routes backend
+
+
+
+
 router.post('/register', authController.register);
 router.post('/login', authController.login);
 router.get('/me', authenticateToken, authController.getMe);
