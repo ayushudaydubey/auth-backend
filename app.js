@@ -10,7 +10,8 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: 'https://auth-frontend-orcin.vercel.app' ,
+  // origin: 'https://auth-frontend-orcin.vercel.app' ,
+  origin: 'http://localhost:5173',
   credentials: true
 }));
 app.use(express.json());
